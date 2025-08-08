@@ -4,6 +4,9 @@ source ./common.sh
 
 root
 
+echo "Enter mysql root password"
+read mysql_root_password
+
 dnf install mysql-server -y &>>$LOGPATH
 validate $? "Installing mysql-server"
 
