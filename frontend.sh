@@ -22,7 +22,7 @@ cd /usr/share/nginx/html/
 unzip /tmp/frontend.zip  &>>$LOGPATH
 validate $? "unzip frontend files"
 
-cp /home/ec2-user/Shell-Expense/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGPATH
+cp /home/ec2-user/Shell-Expense-Common/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGPATH
 validate $? "copying configuration file"
 
 systemctl restart nginx &>>$LOGPATH
