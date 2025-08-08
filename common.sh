@@ -21,7 +21,7 @@ fi
 }
 
 root(){
-if [ $USERID -eq 0]
+if [ $USERID -eq 0 ]
 then
 echo "You are super user"
 else 
